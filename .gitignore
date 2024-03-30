@@ -1,7 +1,9 @@
 ### No compiled files
 *.o
-libft.a
-libft_printf_gnl/obj/
+libft/libft_print_gnl/libft.a
+libft/libft_printf_gnl/obj/
+./client
+./server
 
 ### macOS ###
 .DS_Store
