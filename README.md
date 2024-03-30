@@ -3,7 +3,7 @@
 
 - Clonar el repositorio
 - Se dispone de un Makefile con las reglas `all`, `server`, `client`, `bonus`, `server_bonus`, `client_bonus`, `clean`, `fclean` y `re`
-- Ejecutando el comando `make` se obtienen dos binarios `server` y `client` que deben ser ejecutados de la siguiente forma:
+- Ejecutando el comando `make` se compilar dos binarios, `server` y `client`, que deben ser ejecutados de la siguiente forma:
 
 Primero ejecutar `server`, que devuelve su PID:
 ```bash
@@ -13,8 +13,10 @@ Server PID: [SERVER_PID]
 
 Seguidamente ejecutar `client` en otro terminal. Este enviará el mensaje pasado al `server` cuyo PID se indica, imprimiéndolo por salida estándar.
 ```bash
-./client [SERVER_PID] "[MENSAJE]
+./client [SERVER_PID] "[MENSAJE]"
 ```
+
+- Igualmente es posible compilar el bonus con el comando `make bonus`
 
 ## Contenido 
 
