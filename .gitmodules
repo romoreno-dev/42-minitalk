@@ -1,0 +1,3 @@
+[submodule "libft"]
+	path = libft
+	url = https://github.com/romoreno-dev/42-libft-printf-gnl.git
