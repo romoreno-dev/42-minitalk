@@ -11,23 +11,23 @@
 # **************************************************************************** #
 
 # Variables
-LIBFT_ROUTE := libft/libft_printf_gnl
-COMPILER := gcc -Wall -Wextra -Werror -I./$(LIBFT_ROUTE)/include
-REMOVER := rm -rf
+LIBFT_ROUTE 		:= include/libft
+COMPILER 			:= gcc -Wall -Wextra -Werror -I./$(LIBFT_ROUTE)/include
+REMOVER				:= rm -rf
 
-CLIENT_MAIN := src/client/main.c
-SERVER_MAIN := src/server/main.c
+CLIENT_MAIN 		:= src/client/main.c
+SERVER_MAIN 		:= src/server/main.c
 
-CLIENT_MAIN_BONUS := src/client/main_bonus.c
-SERVER_MAIN_BONUS := src/server/main_bonus.c
+CLIENT_MAIN_BONUS 	:= src/client/main_bonus.c
+SERVER_MAIN_BONUS 	:= src/server/main_bonus.c
 
-LIBFT := $(LIBFT_ROUTE)/libft.a
+LIBFT 				:= $(LIBFT_ROUTE)/libft.a
 
 # Styles
-PRINT_TEXT					:= \033[0m
-BOLD 						:= \033[1m
-GREEN						:= \033[0;32m
-BLUE						:= \033[0;94m
+PRINT_TEXT			:= \033[0m
+BOLD 				:= \033[1m
+GREEN				:= \033[0;32m
+BLUE				:= \033[0;94m
 
 # Rules
 all: client server
@@ -55,15 +55,15 @@ server_bonus: $(LIBFT)
 		@echo "$(GREEN)$(BOLD)server_bonus created!$(PRINT_TEXT)"
 
 $(LIBFT):
-		@make -C libft/libft_printf_gnl
+		@make -C $(LIBFT_ROUTE)
 
 clean:
 		@echo "Cleaning..."
-		@make clean -C libft/libft_printf_gnl
+		@make clean -C $(LIBFT_ROUTE)
 		@echo "$(BLUE)All objects files were cleaned!$(PRINT_TEXT)"
 
 fclean:
-		@make fclean -C libft/libft_printf_gnl
+		@make fclean -C $(LIBFT_ROUTE)
 		@$(REMOVER) client server
 		@echo "$(BLUE)All compiled files were cleaned!$(PRINT_TEXT)"
 
