@@ -26,13 +26,13 @@ Seguidamente ejecutar `client` en otro terminal. Este enviará el mensaje pasado
 ##  minitalk 42 Project (Rank 02)
 Score: 125/100
 
-Como se menciona más arriba, el proyecto consta de dos pequeños programas:
-`server`: Actúa de servidor. Muestra su PID al ejecutarse y permanece a la escucha de los mensajes que le envía el cliente.
-`client`: Actúa de cliente. Recibe por argumento el PID del servidor y el mensaje que quiere ser enviado. 
+Como se menciona más arriba, el proyecto consta de dos pequeños programas:    
+`server`: Actúa de servidor. Muestra su PID al ejecutarse y permanece a la escucha de los mensajes que le envía el cliente.    
+`client`: Actúa de cliente. Recibe por argumento el PID del servidor y el mensaje que quiere ser enviado.     
 
 #### (BONUS)
-Los bonus `server_bonus` y `client_bonus` deben aplicar:
-- El servidor comunica al cliente que el mensaje ha sido recibido
-- Es posible enviar caracteres unicode (esta feature se encuentra soportada en todo mi proyecto)
+Los bonus `server_bonus` y `client_bonus` deben aplicar:   
+- El servidor comunica al cliente que el mensaje ha sido recibido   
+- Es posible enviar caracteres unicode (esta feature se encuentra soportada en todo mi proyecto)   
 
 
